@@ -1,0 +1,48 @@
+#animation-study {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  animation-name: myAnimation;
+  animation-duration: 8s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  animation-delay: 2s;
+  position: relative;
+}
+
+@keyframes myAnimation {
+    0%
+    {
+        background-color: black;
+        top: 0;
+        left: 0;
+    }
+
+    25%
+    {
+        background-color: blue;
+        top: 0;
+        left: 200px;
+    }
+
+    50%
+    {
+        background-color: blue;
+        top: 200px;
+        left: 200px;
+    }
+
+    75%
+    {
+        background-color: yellow;
+        top: 200px;
+        left: 0;
+    }
+
+    100%
+    {
+        background-color: green;
+        top: 0;
+        left: 0;
+    }
+}
