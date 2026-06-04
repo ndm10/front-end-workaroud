@@ -61,3 +61,14 @@ const arrAfterSlice = arrBeforeSlice.slice(3)
 console.log('Original array:', arrBeforeSlice)
 console.log('Sliced array:', arrAfterSlice)
 /* =================Array basic method test====================== */
+
+/* =================Array search method test====================== */
+const searchArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 4, NaN]
+console.log('Index of 4:',searchArr.indexOf(4));
+console.log('Last index of 4:',searchArr.lastIndexOf(4));
+console.log('Index of NaN',searchArr.indexOf(NaN));
+console.log('Include NaN:',searchArr.includes(NaN));
+console.log('Find method:',searchArr.find((value, index, arr) => {
+    return value < 7;
+}));
+/* =================Array search method test====================== */
