@@ -66,9 +66,18 @@ console.log('Sliced array:', arrAfterSlice)
 const searchArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 4, NaN]
 console.log('Index of 4:',searchArr.indexOf(4));
 console.log('Last index of 4:',searchArr.lastIndexOf(4));
-console.log('Index of NaN',searchArr.indexOf(NaN));
-console.log('Include NaN:',searchArr.includes(NaN));
-console.log('Find method:',searchArr.find((value, index, arr) => {
+console.log('indexOf() NaN',searchArr.indexOf(NaN));
+console.log('includes() NaN:',searchArr.includes(NaN));
+console.log('find() method:',searchArr.find((value, index, arr) => {
     return value < 7;
+}));
+console.log('findIndex() method:',searchArr.findIndex((value, index, arr) => {
+    return value > 7;
+}));
+console.log('findLast() method:',searchArr.findLast((value, index, arr) => {
+    return value > 7;
+}));
+console.log('findLastIndex() method:',searchArr.findLastIndex((value, index, arr) => {
+    return value > 7;
 }));
 /* =================Array search method test====================== */
