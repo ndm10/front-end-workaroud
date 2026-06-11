@@ -51,12 +51,12 @@ console.log('Array before using flat map:', arrFlatMap);
 console.log('Array after using flat map:', arrFlatMap.flatMap(x => [x, x * 10, x * 100]));
 
 
-const spliceArr = [12,32,52]
+const spliceArr = [12, 32, 52]
 console.log('Array before splice:', spliceArr);
 spliceArr.splice(1, 5, 'hello', 'Minh')
 console.log('Array after splice:', spliceArr)
 
-const arrBeforeSlice = [34,25,12,32,52]
+const arrBeforeSlice = [34, 25, 12, 32, 52]
 const arrAfterSlice = arrBeforeSlice.slice(3)
 console.log('Original array:', arrBeforeSlice)
 console.log('Sliced array:', arrAfterSlice)
@@ -64,20 +64,37 @@ console.log('Sliced array:', arrAfterSlice)
 
 /* =================Array search method test====================== */
 const searchArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 4, NaN]
-console.log('Index of 4:',searchArr.indexOf(4));
-console.log('Last index of 4:',searchArr.lastIndexOf(4));
-console.log('indexOf() NaN',searchArr.indexOf(NaN));
-console.log('includes() NaN:',searchArr.includes(NaN));
-console.log('find() method:',searchArr.find((value, index, arr) => {
+console.log('Index of 4:', searchArr.indexOf(4));
+console.log('Last index of 4:', searchArr.lastIndexOf(4));
+console.log('indexOf() NaN', searchArr.indexOf(NaN));
+console.log('includes() NaN:', searchArr.includes(NaN));
+console.log('find() method:', searchArr.find((value, index, arr) => {
     return value < 7;
 }));
-console.log('findIndex() method:',searchArr.findIndex((value, index, arr) => {
+console.log('findIndex() method:', searchArr.findIndex((value, index, arr) => {
     return value > 7;
 }));
-console.log('findLast() method:',searchArr.findLast((value, index, arr) => {
+console.log('findLast() method:', searchArr.findLast((value, index, arr) => {
     return value > 7;
 }));
-console.log('findLastIndex() method:',searchArr.findLastIndex((value, index, arr) => {
+console.log('findLastIndex() method:', searchArr.findLastIndex((value, index, arr) => {
     return value > 7;
 }));
+
+const numSortArray = [1, 4, 5, 8, 3, 2, 53, 34, 10]
+const charSortArray = ['hello', 'banana', 'matcha', 'apple', 'conquer', 'happy']
+numSortArray.sort()
+console.log('Array of numbers after sort:', numSortArray)
+charSortArray.sort()
+console.log('Array of strings after sort:', charSortArray.sort())
+numSortArray.reverse()
+console.log('Array of numbers after reverse:', numSortArray.reverse())
+charSortArray.reverse()
+console.log('Array of strings after reverse:', charSortArray.reverse())
+const numSortArrayWithToSorted = [1, 4, 5, 8, 3, 2, 53, 34, 10]
+const charSortArrayWithToReversed = ['hello', 'banana', 'matcha', 'apple', 'conquer', 'happy']
+numSortArrayWithToSorted.toSorted()
+console.log('Array of numbers after using toSorted():', numSortArrayWithToSorted)
+charSortArrayWithToReversed.toReversed()
+console.log('Array of string after using toReversed():', charSortArrayWithToReversed)
 /* =================Array search method test====================== */
