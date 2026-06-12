@@ -97,4 +97,7 @@ numSortArrayWithToSorted.toSorted()
 console.log('Array of numbers after using toSorted():', numSortArrayWithToSorted)
 charSortArrayWithToReversed.toReversed()
 console.log('Array of string after using toReversed():', charSortArrayWithToReversed)
+console.log('Find the minimum number:', Math.min.apply(null, numSortArrayWithToSorted))
+console.log('Find the minimum number:', Math.max.apply(null, numSortArrayWithToSorted))
+console.log(Boolean(0))
 /* =================Array search method test====================== */
