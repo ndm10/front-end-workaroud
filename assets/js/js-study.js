@@ -49,6 +49,7 @@ console.log('Array after using flat:', arrTwoDimension.flat());
 const arrFlatMap = [12, 13, 14, 15, 16, 17]
 console.log('Array before using flat map:', arrFlatMap);
 console.log('Array after using flat map:', arrFlatMap.flatMap(x => [x, x * 10, x * 100]));
+console.log('Array before using flat map:', arrFlatMap);
 
 
 const spliceArr = [12, 32, 52]
@@ -101,3 +102,24 @@ console.log('Find the minimum number:', Math.min.apply(null, numSortArrayWithToS
 console.log('Find the minimum number:', Math.max.apply(null, numSortArrayWithToSorted))
 console.log(Boolean(0))
 /* =================Array search method test====================== */
+
+/* =================Array iteration method test====================== */
+const arrForEach = [1, 2, 53, 634, 45, 23, 634, 63]
+arrForEach.forEach((value, index, array) => {
+    value = value * 2;
+    array[index] = value;
+})
+console.log(arrForEach);
+
+const arrMapMethod = [1, 34, 235, 53, 4, 63, 4, 5, 675, 685, 345]
+const arrMapMethod2 = arrMapMethod.map((value, index, array) => {
+    return array[index] = index;
+})
+console.log(arrMapMethod2);
+
+const arrReduce = [23, 4, 63, 67, 8, 456, 745, 75, 4]
+let sumArrReduce = arrReduce.reduce((initalValue, value) => {
+    return initalValue + value;
+}, 100000)
+console.log("Total from reduce method:", sumArrReduce);
+/* =================Array iteration method test====================== */
