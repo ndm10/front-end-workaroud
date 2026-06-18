@@ -119,7 +119,26 @@ console.log(arrMapMethod2);
 
 const arrReduce = [23, 4, 63, 67, 8, 456, 745, 75, 4]
 let sumArrReduce = arrReduce.reduce((initalValue, value) => {
-    return initalValue + value;
+    return value;
 }, 100000)
 console.log("Total from reduce method:", sumArrReduce);
+
+let sumArrReduceRight = arrReduce.reduceRight((initial, value) => {
+    return initial + value;
+}, 0)
+console.log("Total from reduce right method:", sumArrReduceRight);
+
+let everyResult = arrReduce.every((value, index, array) => {
+    return value >= 4;
+})
+console.log("Every result:", everyResult)
+
+let someResult = arrReduce.some((value, index, array) => {
+    return value < 4;
+})
+console.log("Some result:", someResult)
+
+const strForFrom = 'ASDFGHJK';
+let arrFromStr = Array.from(strForFrom, (x) => x + 1);
+console.log("Array is produced by from method", arrFromStr)
 /* =================Array iteration method test====================== */
