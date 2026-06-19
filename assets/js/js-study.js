@@ -141,4 +141,9 @@ console.log("Some result:", someResult)
 const strForFrom = 'ASDFGHJK';
 let arrFromStr = Array.from(strForFrom, (x) => x + 1);
 console.log("Array is produced by from method", arrFromStr)
+
+console.log("Result after use keys():", arrReduce.keys());
+console.log("Result after use entries():", arrReduce.entries());
+console.log("Result after use with():", arrReduce.with(0));
+console.log("Result after use spread operator:", ...arrReduce);
 /* =================Array iteration method test====================== */
