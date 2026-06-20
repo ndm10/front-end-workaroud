@@ -54,7 +54,7 @@ console.log('Array before using flat map:', arrFlatMap);
 
 const spliceArr = [12, 32, 52]
 console.log('Array before splice:', spliceArr);
-spliceArr.splice(1, 5, 'hello', 'Minh')
+spliceArr.splice(1)
 console.log('Array after splice:', spliceArr)
 
 const arrBeforeSlice = [34, 25, 12, 32, 52]
