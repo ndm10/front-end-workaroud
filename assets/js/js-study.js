@@ -146,4 +146,22 @@ console.log("Result after use keys():", arrReduce.keys());
 console.log("Result after use entries():", arrReduce.entries());
 console.log("Result after use with():", arrReduce.with(0));
 console.log("Result after use spread operator:", ...arrReduce);
+
+const person = { name: "Minh", age: 25, degree: "Bachelor" }
+for (let i in person) {
+    console.log(i + ':', person[i]);
+}
+
+for (let i of strForFrom) {
+    console.log(i);
+}
+for (let i of arrReduce) {
+    console.log(i);
+}
+
+const mySet = new Set(['a', 'a', 'b', 'c', 'd'])
+console.log(mySet);
+mySet.add('e');
+mySet.add('f');
+console.log(mySet);
 /* =================Array iteration method test====================== */
