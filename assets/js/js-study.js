@@ -159,9 +159,22 @@ for (let i of arrReduce) {
     console.log(i);
 }
 
-const mySet = new Set(['a', 'a', 'b', 'c', 'd'])
+const arrForSet = ['a', 'a', 'b', 'c', 'd'];
+const mySet = new Set(arrForSet)
 console.log(mySet);
 mySet.add('e');
 mySet.add('f');
 console.log(mySet);
+
+const fruits1 = new Map([
+    ['apples', 500],
+    ['bananas', 200],
+    ['pinapples', 300]
+])
+fruits1.set('mangos', 100)
+fruits1.set('mangos', 100)
+fruits1.set('mangos', 300)
+console.log(fruits1)
+console.log(fruits1.get('mangos'))
+
 /* =================Array iteration method test====================== */
