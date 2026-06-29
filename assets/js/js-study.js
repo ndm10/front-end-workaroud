@@ -164,6 +164,8 @@ const mySet = new Set(arrForSet)
 console.log(mySet);
 mySet.add('e');
 mySet.add('f');
+const arrFromSet = Iterator.from(mySet);
+console.log(arrFromSet.every((x) => { x === '1' }))
 console.log(mySet);
 
 const fruits1 = new Map([
