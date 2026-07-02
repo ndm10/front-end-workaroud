@@ -179,4 +179,19 @@ fruits1.set('mangos', 300)
 console.log(fruits1)
 console.log(fruits1.get('mangos'))
 
+const fruitMap = [
+    { name: "apples", quantity: 300 },
+    { name: "bananas", quantity: 500 },
+    { name: "oranges", quantity: 200 },
+    { name: "kiwi", quantity: 150 }
+]
+
+// Callback function to select low volumes 
+function myCallback({ name }) {
+  return name === 'kiwi' ? 'oke' : 'not oke';
+}
+
+const result = Map.groupBy(fruitMap, myCallback);
+
+console.log(result)
 /* =================Array iteration method test====================== */
